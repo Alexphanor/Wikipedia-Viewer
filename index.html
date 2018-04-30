@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Wikipedia Search Viewer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+      body{
+        background: 
+          url(http://www.thencn.com/wp-content/uploads/2018/02/Wiki-image-696x392.jpg)
+          center
+          no-repeat
+          fixed
+          padding-box
+          border-box                   
+      }
+
+      .xtraStyle:hover{
+        opacity: .95;        
+      }
+      a:hover{
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .xtraStyle{
+        opacity: .8;
+        text-shadow: 2px -2px 10px black;
+        transition: opacity .35s;
+      }
+      a{
+        transition: font-size 5s;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="jumbotron mt-5 mx-5 text-center text-light bg-dark xtraStyle">        
+        <h1 class="display-3">Wikipedia Search Viewer</h1>
+        <hr class="mx-2">
+        <p class="lead display-5">Want to learn something new?</p>
+        <a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" role="button">Try Random Search!</a>
+        <p class="lead display-5 mt-5">Otherwise, what are you looking for?</p>
+        <div class="form-group">
+          <form name="formname" onsubmit="return false">
+            <input type="search" class="form-control text-center font-weight-bold text-uppercase mt-4" id="input"  placeholder="Type Here" value="">
+          </form>        
+        </div>
+        <p class="lead">
+          <a class="btn btn-info btn-lg" id="search" role="button">Search</a>
+        </p>
+        <h2 id="refer" hidden>Here are our results!</h2>
+      </div>      
+      <div class="row d-block">
+        <div class="col-11 mx-5 my-1">          
+          <div class="card-deck" ></div>
+            <a id="link0" href="#" target="_blank" id="results0" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title0">Title</h4>
+                  <p class="card-text" id="description0">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link1" href="#" target="_blank" id="results1" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title1">boat</h4>
+                  <p class="card-text" id="description1">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link2" href="#" target="_blank" id="results2" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title2">snake</h4>
+                  <p class="card-text" id="description2">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link3" href="#" target="_blank" id="results3" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title3">supa</h4>
+                  <p class="card-text" id="description3">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link4" href="#" target="_blank" id="results4" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title4">Title</h4>
+                  <p class="card-text" id="description4">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link5" href="#" target="_blank" id="results5" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title5">Title</h4>
+                  <p class="card-text" id="description5">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link6" href="#" target="_blank" id="results6" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title6">Title</h4>
+                  <p class="card-text" id="description6">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link7" href="#" target="_blank" id="results7" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title7">Title</h4>
+                  <p class="card-text" id="description7">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link8" href="#" target="_blank" id="results8" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title8">Title</h4>
+                  <p class="card-text" id="description8">Text</p>
+                </div>
+              </div> 
+            </a>
+            <a id="link9" href="#" target="_blank" id="results9" hidden>
+              <div class="card border border-dark bg-dark text-light mb-3 xtraStyle">
+                <img class="card-img-top" src="#" alt="">
+                <div class="card-body">
+                  <h4 class="card-title" id="title9">Title</h4>
+                  <p class="card-text" id="description9">Text</p>
+                </div>
+              </div> 
+            </a>            
+          </div>                      
+        </div>
+      </div>
+    </div>
+
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>    
+  </body>
+</html>
